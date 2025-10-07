@@ -2,23 +2,84 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="style.css" />
+
     <title>Document</title>
+  </head>
+
+  <body>
     <h1>Scrolling Options |10-06-25 AG!|</h1>
 
+    <h2>People to Follow</h2>
+    <h3>Scroll horizontally to discover creators and developers</h3>
+
     <div class="grid-container">
-      <div class="grid-item scrollable-content">
-        <h2>People to Follow</h2>
+      <!-- Vertical scroll list -->
+
+      <div class="grid-item horizontal-list" aria-label="People list">
+        <ul>
+          <!-- <li>Jamal Singh</li> -->
+          <!-- <li>Lina Rodriguez</li> -->
+          <!-- <li>Tariq Brown</li> -->
+          <!-- <li>Marvel Gonzalez</li> -->
+          <!-- <li>Oswalito Rodriguez</li> -->
+          <!-- <li>Wasby Rodriguez</li> -->
+        </ul>
       </div>
-      <div class="grid-item">
-        <li>Amelia Perk</li>
-        <li>Jamal Singh</li>
-        <li>Lina Rodriguez</li>
-        <li>Tariq Brown</li>
+
+      <!-- Horizontal scroll handles -->
+
+      <div
+        class="grid-item horizontal-list"
+        aria-label="Handles list"
+        aria-label="People list"
+      >
+        <div class="handles" class="grid-item circle">
+          <button class="handle">
+            <li>Amelia Perk</li>
+            <div class="avatar">AP</div>
+            @Amelia_Perk
+            <span class="follow-label">@follow</span>
+          </button>
+
+          <button class="handle">
+            <li>Jamal Singh</li>
+            <div class="avatar">JS</div>
+            @Jamal_Singh<span class="follow-label">@follow</span>
+          </button>
+          <button class="handle">
+            <li>Lina Rodriguez</li>
+            <div class="avatar">LR</div>
+            @Lina_Rodriguez<span class="follow-label">@follow</span>
+          </button>
+          <button class="handle">
+            <li>Tariq Brown</li>
+            <div class="avatar">TB</div>
+            @Tariq_Brown<span class="follow-label">@follow</span>
+          </button>
+          <button class="handle">
+            <li>Marvel Gonzalez</li>
+            <div class="avatar">MG</div>
+            @marvel_Gonzalez<span class="follow-label">@follow</span>
+          </button>
+
+          <button class="handle">
+            <li>Oswalito Rodriguez</li>
+            <div class="avatar">OR</div>
+            @Oswalito_Rodriguez<span class="follow-label">@follow</span>
+          </button>
+          <button class="handle">
+            <li>Wasby Rodriguez</li>
+            <div class="avatar">WR</div>
+            @wasby_Rodriguez<span class="follow-label">@follow</span>
+          </button>
+        </div>
       </div>
-      <div class="grid-at"></div>
+      
+      </div>
     </div>
-  </head>
-  <body></body>
+  </body>
 </html>

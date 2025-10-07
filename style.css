@@ -1,0 +1,106 @@
+body {
+  background-color: #04000b;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: aliceblue;
+}
+h2 {
+  text-indent: 230px;
+  color: aliceblue;
+}
+h3 {
+  text-indent: 230px;
+  color: aliceblue;
+}
+li {
+  text-align: right;
+  padding-left: 5px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 60px;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 6fr));
+  color: #7bace4d3;
+  border: 1px solid #020202;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-right: 3500px;
+}
+
+.vertical-list {
+  max-height: 190px;
+  /* limit height so vertical scrolling is visible */
+  overflow-y: auto;
+  border: 4px solid #0b0a0a;
+  padding: 60px;
+}
+
+.horizontal-list .handles {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px;
+  background-color: #eae6f0;
+}
+
+.handle {
+  flex: 0 0 auto; /* don't shrink, keep intrinsic size */
+  padding: 8px 12px;
+  background: #1313139d;
+  border: solid;
+  color: #f8f8f8da;
+  border-radius: 15px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+/* .handle:focus {
+  outline: 2px solid #5e05e3;
+} */
+
+p {
+  color: #ccc;
+}
+
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #568faecb;
+  color: #fff;
+  margin-right: 8px;
+  font-weight: 700;
+}
+
+.follow-label {
+  background: #e0f0ff;
+  color: rgb(0, 108, 249);
+  border: none;
+  border-radius: 9px;
+  padding-right: 5px;
+  display: inline-flex;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .grid-container {
+    gap: 12px;
+  }
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+}
+p {
+  color: #ccc;
+}
